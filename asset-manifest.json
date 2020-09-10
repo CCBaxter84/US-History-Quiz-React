@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/US-History-Quiz-React/static/css/main.14577ae5.chunk.css",
+    "main.js": "/US-History-Quiz-React/static/js/main.d2961514.chunk.js",
+    "main.js.map": "/US-History-Quiz-React/static/js/main.d2961514.chunk.js.map",
+    "runtime-main.js": "/US-History-Quiz-React/static/js/runtime-main.6be29f90.js",
+    "runtime-main.js.map": "/US-History-Quiz-React/static/js/runtime-main.6be29f90.js.map",
+    "static/js/2.5fe63647.chunk.js": "/US-History-Quiz-React/static/js/2.5fe63647.chunk.js",
+    "static/js/2.5fe63647.chunk.js.map": "/US-History-Quiz-React/static/js/2.5fe63647.chunk.js.map",
+    "index.html": "/US-History-Quiz-React/index.html",
+    "precache-manifest.3260439ef3a807f42bb355b8b15a2101.js": "/US-History-Quiz-React/precache-manifest.3260439ef3a807f42bb355b8b15a2101.js",
+    "service-worker.js": "/US-History-Quiz-React/service-worker.js",
+    "static/css/main.14577ae5.chunk.css.map": "/US-History-Quiz-React/static/css/main.14577ae5.chunk.css.map",
+    "static/js/2.5fe63647.chunk.js.LICENSE.txt": "/US-History-Quiz-React/static/js/2.5fe63647.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6be29f90.js",
+    "static/js/2.5fe63647.chunk.js",
+    "static/css/main.14577ae5.chunk.css",
+    "static/js/main.d2961514.chunk.js"
+  ]
+}
