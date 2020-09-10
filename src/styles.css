@@ -1,0 +1,108 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial;
+    font-size: 20px;
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-correct: 145;
+    --hue-wrong: 0;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: hsl(var(--hue), 100%, 30%);
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+    background-color: hsl(var(--hue), 100%, 30%);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+    background-color: hsl(var(--hue), 100%, 30%);
+}
+
+.container {
+    width: 600px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+#question {
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    gap: 10px;
+}
+
+.button {
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    color: white;
+    padding: 5px 5px;
+    outline: none;
+}
+
+.answer-button {
+    min-width: 200px
+}
+
+.button:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow: 0 0 10px 2px;
+}
+
+.button.correct {
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.button.wrong {
+    --hue: var(--hue-wrong);
+}
+
+#start-button, #next-button {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px
+}
+
+.hide {
+    display:none;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 50vh;
+}

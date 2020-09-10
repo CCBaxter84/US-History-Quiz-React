@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react"
+import { Context } from "./Components/Context"
+import QuestionContainer from "./Components/QuestionContainer"
+import Controls from "./Components/Controls"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const {showQA, showControls, showResult, score} = useContext(Context)
+    return (
+        <div className="container">
+            {showQA && <QuestionContainer/>}
+            {showControls && <Controls/>}
+            {showResult && <h1>You answered {score} of 10 Questions Correctly!</h1>}
+        </div>
+    )
 }
 
-export default App;
+export default App
