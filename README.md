@@ -1,3 +1,5 @@
+I created this app using React. It's a basic quiz app that scores your answers after answering every question. Even though this app is pretty simple I opted to implement global state management via React Context. Alternatively, I could have defined state locally in the App component and passed it down to child components via props. Additionally, each component is a functional component. Consequently, the app utilizes the useState and useContext hooks to manage state.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

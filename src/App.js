@@ -4,7 +4,7 @@ import QuestionContainer from "./Components/QuestionContainer"
 import Controls from "./Components/Controls"
 
 function App() {
-    const {showQA, showControls, showResult, score} = useContext(Context)
+    const { showQA, showControls, showResult, score } = useContext(Context)
     return (
         <div className="container">
             {showQA && <QuestionContainer/>}
